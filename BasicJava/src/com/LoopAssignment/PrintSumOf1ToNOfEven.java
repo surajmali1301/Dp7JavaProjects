@@ -2,7 +2,7 @@ package com.LoopAssignment;
 
 import java.util.Scanner;
 
-public class PrintSumOf_1ToN_OfEven {
+public class PrintSumOf1ToNOfEven {
 
 	public static void main(String[] args) {
 		Scanner ip=new Scanner(System.in);
