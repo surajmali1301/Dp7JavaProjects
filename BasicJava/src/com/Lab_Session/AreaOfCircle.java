@@ -1,10 +1,18 @@
 package com.Lab_Session;
 
+import java.util.*;
+
 public class AreaOfCircle {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner ip = new Scanner(System.in);
+		double area, perimeter;
+		System.out.print("Enter the Radius:");
+		double radius = ip.nextInt();
+		area = Math.PI * radius * radius;
+		perimeter = 2 * Math.PI * radius;
+		System.out.println("Area of Circle is : " + area);
+		System.out.println("Perimeter of Circle is : " + perimeter);
 	}
 
 }

@@ -1,9 +1,20 @@
 package com.Lab_Session;
 
+import java.util.*;
+
 public class CharOrDigit {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner ip = new Scanner(System.in);
+		System.out.println("Enter the character:");
+		char c = ip.next().charAt(0);
+		if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) {
+			System.out.println("It is a Alphabet");
+		} else if (c >= '0' && c <= '9') {
+			System.out.println("It is a Digit");
+		} else {
+			System.out.println("It is a Special character");
+		}
 
 	}
 
