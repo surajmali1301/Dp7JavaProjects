@@ -6,7 +6,7 @@ public class CountOfDigit {
 		int count = 0;
 		int rem = 0;
 		while (num != 0) {//
-			rem = num % 10;// last
+			rem = num % 10;// gives last digit
 			if (rem == digit) {//digit=2;
 				count++;//count=1,2
 			}
