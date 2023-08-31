@@ -14,7 +14,7 @@ public class FactorialMethod {
 			fact*=i;
 		}
 		System.out.println("Factorial: "+fact);
-//		return fact;//when return type same as declared
+//		return fact;//method return type same as variable data-type--->fact
 	}
 
 	public static void main(String[] args) {
@@ -25,6 +25,7 @@ public class FactorialMethod {
 		int num =sc.nextInt();
 		
 		fact(num);
+		sc.close();
 		
 
 		
