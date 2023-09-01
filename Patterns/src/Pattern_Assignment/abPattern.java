@@ -9,10 +9,9 @@ public class abPattern {
 				System.out.print(" ");
 			}
 
-			char ch = 'A';
 			for (char j = 1; j <= i; j++) {
 				System.out.print("ab");
-				ch++;
+
 			}
 			System.out.println();
 		}
