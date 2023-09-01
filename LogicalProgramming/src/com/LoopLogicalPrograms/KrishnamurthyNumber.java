@@ -1,4 +1,4 @@
-package com.MethodCallin;
+package com.LoopLogicalPrograms;
 import java.util.*;
 public class KrishnamurthyNumber {
 
@@ -6,12 +6,12 @@ public class KrishnamurthyNumber {
 	static int krishna(int num) {
 		int sum=0;
 		int rem=0;
-		 int fact =1;
 		 while (num!=0) {
 			 rem = num % 10;
+			 int fact =1;
 			
-				for (int i = 1; i <= 0; i++) {
-					fact*=i;
+				for (int i = 1; i <= rem; i++) {
+					fact*=i;//
 				}
 			sum+=fact;
 			num/=10;

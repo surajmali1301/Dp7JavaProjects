@@ -8,24 +8,28 @@ public class ArmstrongNumber {
 		int sum =0;
 		int count = 0;
 		
-		int sq= 0;
+		
 		while (temp != 0)// condition
 		{
 			temp /= 10;
 			count++;//it will count temp oprations until num completely get removed
 		}
+		
+		
 		while (temp1 != 0) {
 
 			int rem = temp1 % 10;
-			int s = 1;
+			int value = 1;
 			for (int i = 1; i <= count; i++) {
-				s *= rem;
+				value *= rem;
+				System.out.println("Value "+value);
 			}
-			sum += s;
+			sum += value;// after for loop
+			System.out.println("SUm: "+sum);
 			temp1 /= 10;
 
 		}
-		System.out.println(num == sum ? "armstrong" : "not armstrong");
+//		System.out.println(num == sum ? "armstrong" : "not armstrong");
 	}
 
 	public static void main(String[] args) {

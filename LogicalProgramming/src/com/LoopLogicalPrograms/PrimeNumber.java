@@ -1,4 +1,4 @@
-package com.MethodCallin;
+package com.LoopLogicalPrograms;
 
 public class PrimeNumber {
 
