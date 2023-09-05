@@ -10,18 +10,10 @@ public class LeapYear {
 		System.out.print("Enter the Year:");
 		int year = ip.nextInt();
 
-		if (year % 4 == 0) {
-			if (year % 100 == 0) {
-				if (year % 400 == 0) {
-					System.out.println(year + " is Leap year");
-				} else {
-					System.out.println(year + " is not a Leap year");
-				}
-			} else {
-				System.out.println(year + " is a Leap year");
-			}
+		if ((year % 400 == 0) || (year % 100 == 0 && year % 4 == 0)) {
+			System.out.println(year + " is leap year");
 		} else {
-			System.out.println(year + " is not a leap year");
+			System.out.println(year + " is not leap year");
 		}
 
 	}

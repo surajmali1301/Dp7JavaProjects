@@ -15,7 +15,7 @@ public class ProductOfDigit {
 			product *= rem;
 			num /= 10;
 		}
-		System.out.println("Product Of Each Digit Of Number:" + product);
+		System.out.println("Product Of Number:" + product);
 
 	}
 

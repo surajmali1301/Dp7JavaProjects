@@ -2,24 +2,30 @@ package com.LoopLogicalPrograms;
 
 public class ExtractDigits {
 
-	static void extract(int num) {
-		System.out.println("digis: " + num);
-
-		while (num != 0) {
-			System.out.println(num % 10);// give digits from last
-			num = num / 10;// remove last digit
-		}
-	}
+//	static void extract(int num) {
+//		System.out.println("digits: " + num);
+//
+//		while (num != 0) {
+//			System.out.println(num % 10);// give digits from last
+//			num = num / 10;// remove last digit
+//			System.out.println("num: "+num);
+//		}
+//	}
 
 	static void palind(int num) {
 
 		int original = num;
-		System.out.println("Check Palindrome");
 		int rev=0;
-		
+		int rem = num%10;
 		while(num!=0)
 		{
-//			rev=
+			rev=rev*10+rem;
+		}
+		if (rev==original) {
+			System.out.println("Palindrome");
+		}
+		else {
+			System.out.println("Not palindrome");
 		}
 	}
 
@@ -29,7 +35,8 @@ public class ExtractDigits {
 	}
 
 	public static void main(String[] args) {
-		extract(1234);
+//		extract(1234);
+		palind(121);
 	}
 
 }

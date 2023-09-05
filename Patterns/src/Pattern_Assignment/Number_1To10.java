@@ -1,4 +1,4 @@
-package com.numbers;
+package Pattern_Assignment;
 
 public class Number_1To10 {
 
