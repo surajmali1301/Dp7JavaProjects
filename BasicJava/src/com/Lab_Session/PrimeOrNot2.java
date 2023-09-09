@@ -1,6 +1,6 @@
 
 package com.Lab_Session;
-
+import java.util.*;
 public class PrimeOrNot2 {
 
 	// Function to check if a number is prime or not
@@ -17,7 +17,9 @@ public class PrimeOrNot2 {
 	}
 
 	public static void main(String[] args) {
-		long number = 78654329;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number to find");
+		long number = sc.nextLong();
 		System.out.println("Prime numbers from the digits in " + number + ":");
 
 		while (number > 0) {

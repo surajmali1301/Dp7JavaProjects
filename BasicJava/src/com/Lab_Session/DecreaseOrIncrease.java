@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class DecreaseOrIncrease {
 
 	// To check if a number is increasing
-	public static boolean isAscending(int num) {
-		int lastDigit = num % 10;
+	 static boolean inreasing(int num) {// 12345 || 1234789
+		int rem1 = num % 10;
 		num /= 10;
 
 		while (num > 0) {
-			int currentDigit = num % 10;
-			if (currentDigit >= lastDigit) {
+			int rem2 = num % 10;
+			if (rem2 > rem1) {
 				return false;
 			}
-			lastDigit = currentDigit;
+			rem1 = rem2;
 			num /= 10;
 		}
 
@@ -22,16 +22,16 @@ public class DecreaseOrIncrease {
 	}
 
 	// To check if a number is decreasing
-	public static boolean isDecending(int num) {
-		int lastDigit = num % 10;
+	 static boolean decresing(int num) {//98765 || 9876321
+		int rem1 = num % 10;
 		num /= 10;
 
 		while (num > 0) {
-			int currentDigit = num % 10;
-			if (currentDigit <= lastDigit) {
+			int rem2 = num % 10;
+			if (rem2 < rem1) {
 				return false;
 			}
-			lastDigit = currentDigit;
+			rem1 = rem2;
 			num /= 10;
 		}
 
@@ -43,9 +43,9 @@ public class DecreaseOrIncrease {
 		System.out.print("Enter a number: ");
 		int num = sc.nextInt();
 
-		if (isAscending(num)) {
+		if (inreasing(num)) {
 			System.out.println(num + " is an increasing number.");
-		} else if (isDecending(num)) {
+		} else if (decresing(num)) {
 			System.out.println(num + " is a decreasing number.");
 		} else {
 			System.out.println(num + " is a bouncy number.");
