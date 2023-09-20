@@ -15,20 +15,18 @@ public class PrimeNumber {
 	}
 	
 	static boolean prime(int n) {
-		boolean sts =true;
+		boolean status =true;
 		
 		if ((n==0)||(n==1)) {
-			sts = false;
-		} else {
-
-			for (int i = 2; i <=n/2; i++) {
-				if (n%2==0) {
-					sts =false;
-					break;
-				}
+			status = false;
+		} 
+		for (int i = 2; i <n; i++) {
+			if(n%i==0) {
+				status = false;
 			}
 		}
-		return true;
+		
+		return status;
 	}
 
 }

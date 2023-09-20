@@ -1,4 +1,4 @@
-package com.Lab_Session;
+package com.ClassRevision;
 
 public class HalfDiamonaShape {
 
