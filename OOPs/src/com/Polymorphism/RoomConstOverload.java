@@ -4,12 +4,16 @@ class Room{
 	int len;
 	int br;
 	
-	Room(){
+	 Room (){
+		this(10,20);
 		System.out.println("Default");
-		len=5;
 		br=5;
+		len=5;
+//		return this;
+		this.display2();
 	}
 	Room(int len,int br){
+		this(5);
 		System.out.println("Rectangle");
 		this.len=len;
 		this.br=br;
@@ -18,17 +22,27 @@ class Room{
 		System.out.println("Square");
 		this.len=len;
 		this.br=len;
+		this.area();
 	}
 	
+	void display(Room room) {
+		System.out.println("Hii");
+	}
+	void display2() {
+		System.out.println("Bye");
+	}
 	void area() {
+		display(this);
 		System.out.println("Area of room: "+(len*br));
 	}
-	
+	{
+		
+	}
 	
 }
 public class RoomConstOverload {
 
-	public static void main(String[] args) {
+	final public static void main(String[] args) {
 
 
 		Room r = new Room();

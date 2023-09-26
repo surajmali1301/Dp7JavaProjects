@@ -1,6 +1,6 @@
 package com.containment;
 
-public class Library {
+public class LibraryMain {
 
 	public static void main(String[] args) {
 

@@ -2,10 +2,10 @@ package com.Assginment_FinalSuperStatic;
 
 class FinalStaticVar {
 
-    final static int FINAL_STATIC_VARIABLE;
+    final static int finalVar;
 
     static {
-        FINAL_STATIC_VARIABLE = 100;
+        finalVar = 100;
     }
 
     // Default constructor
@@ -20,7 +20,7 @@ class FinalStaticVar {
 
     // Instance method
     public void printFinalStaticVariable() {
-        System.out.println("Final Static Variable Value: " + FINAL_STATIC_VARIABLE);
+        System.out.println("Final Static Variable Value: " + finalVar);
     }
 
     // Static method
