@@ -12,7 +12,7 @@ class Employee extends Person{
 class Celebrity extends Person
 {
 	void display() {
-		System.out.println("Display Class");
+		System.out.println("Celebrity Class");
 	}
 }
 	public class MethodOverridingDemo {
@@ -21,14 +21,15 @@ class Celebrity extends Person
 	public static void main(String[] args) {
 
 
-		Person p = new Person();
+		Person p ;
+		p= new Person();
+		p.display();
+		p = new Employee();
+		p.display();
+		p =new Celebrity();
 		p.display();
 		
-		Employee e = new Employee();
-		e.display();
-		
-		Celebrity c = new Celebrity();
-		c.display();
+	
 
 	}
 

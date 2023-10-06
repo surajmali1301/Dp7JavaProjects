@@ -28,10 +28,13 @@ public class TwinPrimeNumber {
 		int num2 = sc.nextInt();
 
 		boolean status=false;
-		if (checkPrime(num1)) {
-			if (checkPrime(num2)) {
+		if (checkPrime(num1))
+		{
+			if (checkPrime(num2)) 
+			{
 
-				if((num2-num1)==2) {
+				if((num2-num1)==2) 
+				{
 					status=true;
 				}
 			}

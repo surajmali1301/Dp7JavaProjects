@@ -4,7 +4,7 @@ public class FindMax_Number {
 
 	public static void main(String[] args) {
 
-		int num = 456798;
+		int num = 123756;
 		int greatest = 0;
 		while (num>0) {
 			int rem1 = num % 10;
@@ -15,7 +15,7 @@ public class FindMax_Number {
 			num /= 10;
 
 		}
-		System.out.println(greatest);
+		System.out.println("greatest no: "+greatest);
 
 	}
 

@@ -7,11 +7,16 @@ class Covariant{
 		return new Object();
 	}
 	
+	String show1() {
+			
+			return "Hello";
+		}
 	
-Character show2() {
-		
-		return 'A';
-	}
+	
+	Character show2() {
+			
+			return 'A';
+		}
 
 	
 }
@@ -25,7 +30,7 @@ class SubCovriant extends Covariant{
 	
 	String show1() {
 		
-		return "Hello";
+		return "World";
 	}
 	
 }
@@ -36,6 +41,10 @@ class SubCharacter extends Covariant{
 		
 		return 'A';
 	}
+	
+	String show1() {
+		return "Hi";
+	}
 
 }
 
@@ -45,10 +54,14 @@ public class CovariantDemo {
 	
 		
 		Covariant s ;
+		s = new Covariant();
+		System.out.println(s.show()+"\n"+s.show1());
 		s= new SubCovriant();
-		System.out.println(s.show());
+		System.out.println(s.show()+" "+s.show1());
 		s= new SubCharacter();
-		System.out.println(s.show2());
+		System.out.println((int)s.show2());
+		s = new SubCovriant();
+		
 	}
 
 }

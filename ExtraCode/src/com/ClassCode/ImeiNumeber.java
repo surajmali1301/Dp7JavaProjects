@@ -27,10 +27,10 @@ public class ImeiNumeber {
 			number /= 10;
 		}
 
-		boolean isDivisibleBy10 = sumOfDigits % 10 == 0;
+		boolean divBy10 = sumOfDigits % 10 == 0;
 
 		System.out.println("Sum of Digits: " + sumOfDigits);
-		System.out.println("Is Divisible by 10: " + isDivisibleBy10);
+		System.out.println("Is Divisible by 10: " + divBy10);
 	}
 
 }

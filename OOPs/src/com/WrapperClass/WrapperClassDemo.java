@@ -5,11 +5,11 @@ public class WrapperClassDemo {
 	public static void main(String[] args) {
 		
 		int num =23;
-		
+		char c = 'A';
 //		Auto-boxing-->primitive to Wrapper class 
 		Integer i = new Integer(45);
 		
-		Integer j = Integer.valueOf(num);
+		Integer j = Integer.valueOf(c);//converion
 		
 		Integer k = num;
 		

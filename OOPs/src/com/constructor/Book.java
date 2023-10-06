@@ -8,8 +8,8 @@ class library{
 	private int id;
 	private String name;
 	private float price;
-	
-//	public library() {
+//	
+//	final public library() {
 //		int id=101;
 //		String name="html";
 //		float price=500;

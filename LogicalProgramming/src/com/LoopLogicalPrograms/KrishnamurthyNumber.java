@@ -7,11 +7,12 @@ public class KrishnamurthyNumber {
 		int sum=0;
 		int rem=0;
 		 while (num!=0) {
-			 rem = num % 10;
+			 rem = num % 10;//145--5-->14--4--
 			 int fact =1;
 			
 				for (int i = 1; i <= rem; i++) {
-					fact*=i;//
+					fact*=i;//0=1*1--1=1*2--2=2*3--6=6*4--24=24*5--120
+							//
 				}
 			sum+=fact;
 			num/=10;

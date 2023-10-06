@@ -12,23 +12,25 @@ public class ArmstrongNumber {
 		while (temp != 0)// condition
 		{
 			temp /= 10;
-			count++;//it will count temp oprations until num completely get removed
+			count++;//it will count temp operations until numb completely get removed
 		}
+//		System.out.println(temp);//0 
 		
 		
-		while (temp1 != 0) {
+		while (temp1 != 0) {//using new temp1 variable because temp is 0;
 
 			int rem = temp1 % 10;
 			int product = 1;
 			for (int i = 1; i <= count; i++) {
 				product = product*rem;
-				System.out.println("product "+product);
+
 			}
 			sum = sum+product;// after addition of product
-			System.out.println("SUm: "+sum);
+
 			temp1 /= 10;
 
 		}
+		
 		System.out.println(num == sum ? "armstrong" : "not armstrong");
 	}
 
@@ -38,10 +40,12 @@ public class ArmstrongNumber {
 		System.out.println("Enter the number");
 		int num = sc.nextInt();
 		
-		armstrong(num );
+		armstrong(num);
+			
+		}
 		
 		
 
 	}
 
-}
+

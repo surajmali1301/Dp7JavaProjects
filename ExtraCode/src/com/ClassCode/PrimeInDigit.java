@@ -19,15 +19,15 @@ public class PrimeInDigit {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number to find");
-		long number = sc.nextLong();
-		System.out.println("Prime numbers from the digits in " + number + ":");
+		long num = sc.nextLong();
+		System.out.println("Prime numbers from the digits in " + num + ":");
 
-		while (number > 0) {
-			int digit = (int) (number % 10);// type casting and getting remainder
+		while (num > 0) {
+			int digit = (int) (num % 10);// type casting and getting remainder
 			if (isPrime(digit)) {
 				System.out.print(digit + " ");
 			}
-			number /= 10;
+			num /= 10;
 		}
 
 	}
