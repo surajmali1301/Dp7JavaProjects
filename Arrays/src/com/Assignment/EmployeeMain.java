@@ -22,18 +22,18 @@ public class EmployeeMain {
 	static void enterDetails(Employee emp1) {
 	
 		System.out.println("Employee Id");
-		emp1.setEId(1);
+		emp1.setEId(sc.nextInt());
 		
 		System.out.println("Employee Name");
-		emp1.setEName("Suraj");
+		emp1.setEName(sc.next());
 		
 		System.out.println("Employee Salary");
-		emp1.setESalary(50000);
+		emp1.setESalary(sc.nextFloat());
 		
 		emp1.setD(new Department());
 		
 		System.out.println("Department Id");
-		emp1.getD().setdId(1);
+		emp1.getD().setdId(sc.nextInt());
 		
 	}
 	

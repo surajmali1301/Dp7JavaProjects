@@ -9,4 +9,6 @@ public interface FeedBackDetails {
 	void editFeedBack();
 
 	void deleteFeedBack();
+	
+	void searchFeedBack();
 }

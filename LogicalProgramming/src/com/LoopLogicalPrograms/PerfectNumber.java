@@ -9,6 +9,7 @@ public class PerfectNumber {
 		for (int i = 1; i < num; i++) {
 			
 			if(num%i==0) {//number is divisible by less than number
+				System.out.println(i);
 				sum+=i;
 			}
 			

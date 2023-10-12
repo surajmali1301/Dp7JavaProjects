@@ -4,36 +4,34 @@ import java.util.*;
 
 public class AutomorphicNumber {
 
-    public static void main(String[] args) {
-        int num = 625; // Change this to check for a different number
+	static boolean isAutomorphic(int num) {
+		int numCopy = num;
+		int count = 0;
 
-        if (isAutomorphic(num)) {
-            System.out.println(num + " is an automorphic number.");
-        } else {
-            System.out.println(num + " is not an automorphic number.");
-        }
-    }
+		while (numCopy > 0) {
+			numCopy /= 10;
+			count++;
+		}
 
-    static boolean isAutomorphic(int num) {
-        int numCopy = num;
-        int numDigits = 0;
+		int pro = 1;
 
-        // Count the number of digits in num
-        while (numCopy > 0) {
-            numCopy /= 10;
-            numDigits++;
-        }
+		for (int i = 0; i < count; i++) {
+			pro *= 10;
+		}
 
-        int divisor = 1;
+		int square = num * num;
 
-        // Compute the divisor for the modulo operation
-        for (int i = 0; i < numDigits; i++) {
-            divisor *= 10;
-        }
+		return square % pro == num;
+	}
 
-        int square = num * num;
+	public static void main(String[] args) {
+		int num = 625;
 
-        // Check if the last digits of square are equal to num
-        return square % divisor == num;
-    }
+		if (isAutomorphic(num)) {
+			System.out.println(num + " is an automorphic number.");
+		} else {
+			System.out.println(num + " is not an automorphic number.");
+		}
+	}
+
 }

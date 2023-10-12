@@ -43,9 +43,9 @@ class Bank {
 
 	public static void main(String[] args) {
 
-		account a1 = new account(1, "Suarj", 35000f, "Unknown");
-		account a2 = new account(6, "Hrishi",35000f, "Unknown");
-		account a3 = new account(11, "Aniket", 45000f, "Unknown");
+		account a1 = new account(1, "Suarj", 35000f, null);
+		account a2 = new account(6, "Hrishi",35000f, null);
+		account a3 = new account(11, "Aniket", 45000f, null);
 
 		System.out.println("-------------------");
 		System.out.println(a1);

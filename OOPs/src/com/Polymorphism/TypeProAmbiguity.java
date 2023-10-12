@@ -16,8 +16,8 @@ public class TypeProAmbiguity {
 
 //		add(9,3.14f);
 		
-//		9       int :asking double convert 7.8f into double
-//		7.8: float : asking long convert 9 into  long
+//		9       int into cannot convert double convert 7.8f into double
+//		7.8: float into cannot convert long convert 9 into  long
 
 	}
 

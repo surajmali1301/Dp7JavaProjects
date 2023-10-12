@@ -35,8 +35,8 @@ public class InterFaceDemo {
 
 
 		System.out.println("Bakery Name: "+Bakery.bName);
-		Cake c = new Cake();
-		c.bake();
+//		Cake c = new Cake();
+//		c.bake();
 		
 		Biscuit b = new Biscuit();
 		b.minOrder();

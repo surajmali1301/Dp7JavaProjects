@@ -5,7 +5,7 @@ abstract class Bike
 	private int id;
 	private String model;
 	private float cost;
-	
+	protected double i=1;
 	static String brandName;
 	static float discount;
 	
@@ -130,7 +130,7 @@ class BasicBike extends Bike
 	
 
 	@Override
-	void description() {
+	 void description() {
 		
 		System.out.println("This is a normal bike -----");
 		System.out.println("Number of gears:4");

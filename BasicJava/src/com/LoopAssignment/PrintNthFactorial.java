@@ -6,15 +6,14 @@ public class PrintNthFactorial {
 
 	public static void main(String[] args) {
 		Scanner ip = new Scanner(System.in);
-		System.out.print("Enter The Number:");
+		System.out.print("Enter The Number: ");
 		int s = ip.nextInt();
-
+		System.out.println("------------");
 		int fact = 1;
 		for (int i = 1; i <= s; i++) {
 			fact *= s;
+			System.out.println(fact);
 		}
-		System.out.println(fact);
-
 	}
 
 }

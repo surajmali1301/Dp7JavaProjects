@@ -12,9 +12,9 @@ public class WrapperDemo {
 		int num =90;
 		
 //		System.out.println(Integer.parseInt("hi"));//Exception
-		System.out.println(Integer.valueOf(num));
-		System.out.println(Integer.valueOf("123"));
-		System.out.println(Integer.parseInt("123"));
+//		System.out.println(Integer.valueOf(num));
+//		System.out.println(Integer.valueOf("123"));
+//		System.out.println(Integer.parseInt("123"));
 
 	}
 

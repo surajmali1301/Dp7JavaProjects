@@ -82,11 +82,6 @@ public class CovariantDemo1 {
     	Employee e= new Employee(1001, "Sneha", 45000f);
 		ref= e.showDetails();
 		System.out.println(ref.display());
-	//	System.out.println(ref.show());
-		
-//		Employee e1= new Employee(1002, "Pratik", 55000f);
-//		eref= (Employee) e.showDetails();  // casting
-//		System.out.println(eref.show());
 					
 		
 		Employee e1= new Employee(1002, "Pratik", 55000f);

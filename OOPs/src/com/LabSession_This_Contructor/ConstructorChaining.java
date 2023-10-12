@@ -46,6 +46,7 @@ public class ConstructorChaining {
 		System.out.println("-----------Default Values------------------");
 		Vehicle v3 = new Vehicle();
 		System.out.println(v3);
+		
 	}
 }
 

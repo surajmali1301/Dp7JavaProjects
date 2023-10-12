@@ -23,11 +23,11 @@ public class ReturnPoly {
 	public static void main(String[] args) {
 		
 		Shape2 sq = new Shape2();
-		sq.area(5);
+		System.out.println(sq.area(5));
 		Shape2 rectangle = new Shape2();
-		rectangle.area(4, 7);
+		System.out.println(rectangle.area(4, 7));
 		Shape2 circle = new Shape2();
-		circle.area(2.5f);
+		System.out.println(circle.area(2.5f));
 
 	}
 

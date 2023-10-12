@@ -8,7 +8,7 @@ class MyClass
    
    MyClass()
    {
-	   this(10,20);// 2) Constr chaining
+	   this(10,20);// 2) Constructor chaining
    }
    
    MyClass(int a,int b) // 1)In parameterized constructor to differentiate b/w local and instance variable
