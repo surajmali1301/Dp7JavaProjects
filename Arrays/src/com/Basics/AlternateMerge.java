@@ -30,7 +30,7 @@ public class AlternateMerge {
 
 
 		int a[]= {1,2,3,4,5};
-		int b[]= {4,3,2,1};
+		int b[]= {4,3,2,1,0};
 		
 		int []mer=merge(a,b);
 		System.out.println(Arrays.toString(mer));
