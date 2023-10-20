@@ -5,16 +5,18 @@ public class ArrangeEvenBefore {
 	static void arrange(int arr[]) {
 
 		int n = arr.length;
-		int i = -1;
+		int index = -1;
 
 		for (int j = 0; j < n; j++) {
 			if (arr[j] %2== 0) {
-				i++;
-				int temp = arr[i];
-				arr[i] = arr[j];
+				index++;
+				int temp = arr[index];//stores even number
+				arr[index] = arr[j];//stores even number at left/first
 				arr[j] = temp;
+//				System.out.println(arr[index]);
 			}
 		}
+	
 	}
 
 	public static void main(String[] args) {

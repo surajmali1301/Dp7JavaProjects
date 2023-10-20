@@ -8,8 +8,12 @@ public class DivideStringEqual {
 		
 		int len=st.length();
 		
-		int n=len/noOfc;
 		
+		int n=len/noOfc;
+		if(len%noOfc!=0) {
+			System.out.println("We cannot divide in equal parts");
+		}
+		else {
 		String split[] = new String[n];
 		
 		int index=0;
@@ -19,6 +23,7 @@ public class DivideStringEqual {
 			index++;
 		}
 		System.out.println(Arrays.toString(split));
+		}
 	}
 	public static void main(String[] args) {
 
@@ -26,7 +31,7 @@ public class DivideStringEqual {
 		
 		String a = str.join("",str);
 
-		int noOfChar=2;
+		int noOfChar=5;
 		divideEqual(str,noOfChar);
 	}
 

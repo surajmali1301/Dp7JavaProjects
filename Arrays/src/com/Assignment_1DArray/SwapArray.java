@@ -3,12 +3,12 @@ package com.Assignment_1DArray;
 public class SwapArray {
 
 	public static void swap(int[] arr) {
-		int n = arr.length;
+	
 
-		for (int i = 0; i < n - 1; i += 2) {
+		for (int i = 0; i < arr.length - 1; i ++) {
 			int temp = arr[i];
-			arr[i] = arr[i + 1];
-			arr[i + 1] = temp;
+			arr[i] = arr[i+1];
+			arr[i+1] = temp;
 		}
 		
 		for (int i : arr) {

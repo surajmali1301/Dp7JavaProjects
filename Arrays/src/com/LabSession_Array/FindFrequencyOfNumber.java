@@ -20,12 +20,12 @@ public class FindFrequencyOfNumber {
 				elementFreq = ar[i];
 			}
 		}
-		System.out.println("Max Frequency is " + elementFreq + "--->" + max);
+		System.out.println("Max Frequency of " + elementFreq + " is " + max);
 	}
 
 	public static void main(String[] args) {
 
-		int arr[] = { 1, 1, 1, 1, 2, 3, 3, 4, 7, 7, 7, 7 };
+		int arr[] = { 1, 1, 1, 2, 3, 3, 4, 7, 7, 7, 7 };
 
 		frequency(arr);
 

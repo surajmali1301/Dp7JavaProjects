@@ -1,7 +1,7 @@
 package com.LabSession_Array;
 
 import java.util.Arrays;
-
+//set element on left side in ascending order
 public class Ascending_Descending {
     public static void reverse(int[] arr, int left, int right) {
         while (left < right) {

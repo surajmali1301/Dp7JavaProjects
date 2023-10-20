@@ -1,6 +1,6 @@
 package com.LabSession_Array;
 
-public class ReplaceCharacter {
+public class ReplaceCharacter {//y z with a b
 
 	static void replace(char a[]) {
 

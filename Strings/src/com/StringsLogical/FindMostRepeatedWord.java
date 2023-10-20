@@ -1,5 +1,7 @@
 package com.StringsLogical;
 
+import java.util.Arrays;
+
 public class FindMostRepeatedWord {
 
 	static void repeated(String st) {
@@ -8,6 +10,7 @@ public class FindMostRepeatedWord {
 		String word = "";
 		String starr[] = st.split("\\s");
 		int count = 0;
+		System.out.println(Arrays.toString(starr));
 		for (int i = 0; i < starr.length; i++) {
 			if (starr[i].equals("Visited"))
 				continue;
