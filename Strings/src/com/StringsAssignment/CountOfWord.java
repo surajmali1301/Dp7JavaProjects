@@ -12,7 +12,7 @@ public class CountOfWord {
 			for (int j = i + 1; j < starr.length; j++) {
 				if (starr[i].equalsIgnoreCase(starr[j])) {
 					count++;
-					starr[i] = "Visited";
+					starr[j] = "Visited";
 				}
 			}
 			System.out.println(starr[i] + "---->" + count);

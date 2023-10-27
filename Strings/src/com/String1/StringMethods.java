@@ -32,7 +32,7 @@ public class StringMethods {
 		System.out.println("isEmpty: "+s1.isEmpty());
 		
 		String s3 = "Java";
-		String s4 = "Python";
+		String s4 = "Pyth";
 		
 		System.out.println(s3.length()>s4.length());
 		

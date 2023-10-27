@@ -3,6 +3,7 @@ package com.StringsLogical;
 import java.util.Scanner;
 
 public class ReplaceDuplicate2 {
+	//replace only single time duplicate element
 	
 	static String replaceDup(String st)
 	{
@@ -16,6 +17,7 @@ public class ReplaceDuplicate2 {
 				{
 					//System.out.println(j);
 					ch[j]='$';
+					ch[i]='$';
 				}
 			}
 		}
@@ -24,6 +26,7 @@ public class ReplaceDuplicate2 {
 		
 		return st;
 	}
+	
 	
 	public static void main(String[] args) {
        
@@ -35,8 +38,8 @@ public class ReplaceDuplicate2 {
 		
 		System.out.println("Original word:"+word);
 		
+
 		word=replaceDup(word);
-		
 		System.out.println("New word:"+word);
 		
 		

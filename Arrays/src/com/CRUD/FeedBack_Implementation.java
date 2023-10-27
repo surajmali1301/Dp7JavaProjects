@@ -56,7 +56,7 @@ public class FeedBack_Implementation implements FeedBackDetails {
 
 			if (f[i].getFeedBack() != null&&f[i].getRating()!=0) {
 				System.out.print("Give New Feedback: ");
-				f[i].setFeedBack(sc.nextLine());;
+				f[i].setFeedBack(sc.next());;
 				
 				sc.nextLine();
 				

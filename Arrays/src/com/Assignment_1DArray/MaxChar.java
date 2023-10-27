@@ -3,7 +3,7 @@ package com.Assignment_1DArray;
 public class MaxChar {
 
 	static void max(char arr[]) {
-		char maxChar = arr[0];
+		char maxChar = 'A';
 
 		for (int i = 1; i < arr.length; i++) {
 			if (arr[i] > maxChar) {

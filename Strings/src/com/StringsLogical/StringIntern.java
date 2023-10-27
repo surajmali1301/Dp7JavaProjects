@@ -9,7 +9,7 @@ public class StringIntern {
 		
 		String s2 = new String("Java");
 		
-		s2=s2.intern();
+		System.out.println(s1.intern());
 		System.out.println(s2);
 		// Saves m/m
 //		eases comparison, we can compare with ==

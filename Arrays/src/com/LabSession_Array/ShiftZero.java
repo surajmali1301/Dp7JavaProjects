@@ -9,12 +9,12 @@ public class ShiftZero {//shift all zero to the left
 		int temp[]=new int[a.length];
 		int temp2[]=new int[a.length];
 		int index=0;
-		for (int i = 0; i < a.length; i++) {
-			if(a[i]==0) {
-				temp[index++]=a[i];
-
-			}
-		}
+//		for (int i = 0; i < a.length; i++) {
+//			if(a[i]==0) {
+//				temp[index++]=a[i];
+//
+//			}
+//		}
 		for (int i = 0; i < a.length; i++) {
 			if(a[i]!=0) {
 				temp[index++]=a[i];

@@ -2,7 +2,7 @@ package com.StringsLogical;
 
 public class ReverseWordByWord {
 
-	static void reverse(String s) {
+	static String reverse(String s) {
 		String split[] = s.split("\\s");
 		
 		String rev ="";
@@ -14,14 +14,17 @@ public class ReverseWordByWord {
 			rev=rev+" ";
 		}
 		rev=rev+split[split.length-1];
-		System.out.println("After: "+rev);
+//		System.out.println("After: "+rev);
+		
+		return rev;
 	}
 	public static void main(String[] args) {
 
 
 		String str ="I like to learn java";
 		System.out.println("Before: "+str);
-		reverse(str);
+		String word=reverse(str);
+		System.out.println("After: "+word);
 
 	}
 

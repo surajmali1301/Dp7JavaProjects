@@ -11,7 +11,7 @@ public class AlternateMerge {
 		
 		int index=0;
 		
-		int max=Math.max(a.length, b.length);
+//		int max=a.length+ b.length;
 		
 		for (int i = 0; i < a.length; i++) {
 			if(i<a.length) {
@@ -30,7 +30,7 @@ public class AlternateMerge {
 
 
 		int a[]= {1,2,3,4,5};
-		int b[]= {4,3,2,1,0};
+		int b[]= {4,0,2,1,0};
 		
 		int []mer=merge(a,b);
 		System.out.println(Arrays.toString(mer));

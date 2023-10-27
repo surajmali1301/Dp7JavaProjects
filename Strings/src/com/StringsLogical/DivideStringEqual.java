@@ -1,14 +1,14 @@
 package com.StringsLogical;
 //Array String Oops
 import java.util.Arrays;
-//2.Do code for if String is unEqual
+//2.Do code for --divide String in equal Characters
 public class DivideStringEqual {
 
 	static void divideEqual(String st,int noOfc) {
 		
 		int len=st.length();
 		
-		
+		System.out.println(len);
 		int n=len/noOfc;
 		if(len%noOfc!=0) {
 			System.out.println("We cannot divide in equal parts");
@@ -31,7 +31,7 @@ public class DivideStringEqual {
 		
 		String a = str.join("",str);
 
-		int noOfChar=5;
+		int noOfChar=3;
 		divideEqual(str,noOfChar);
 	}
 

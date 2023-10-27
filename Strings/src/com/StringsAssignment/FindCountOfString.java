@@ -2,24 +2,31 @@ package com.StringsAssignment;
 
 public class FindCountOfString {
 
-	static void count(String s) {
+	static void count(String strArr[]) {
 
-		String temp = s;
-
-		while (temp.length() > 0) {
-			char ch = temp.charAt(0);
-			int count = 1;
-
-			for (int i = 0; i < temp.length(); i++) {
-
+		int count=0;
+		
+		for (int i = 0; i < strArr.length; i++) {
+			
+			if(strArr[i].equals("Visited"))
+				continue;
+			count=1;
+			for (int j = i+1; j < strArr.length; j++) {
+				if(strArr[i].equalsIgnoreCase(strArr[j])) {
+					count++;
+					strArr[j]="Visited";
+				}
 			}
+			System.out.println(strArr[i]+"-------"+count);
 		}
 	}
 
 	public static void main(String[] args) {
 
-		String s = "Java";
+		String s = "Java is fun fun";
 
-		count(s);
+		String strArr[] = s.split("\\s");
+		count(strArr);
+		
 	}
 }

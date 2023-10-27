@@ -1,5 +1,5 @@
 package com.StringsLogical;
-
+//Print Only Unique String from String Array
 public class StringArrayComparison {
 
 	static void uniqueString(String str1[], String str2[]) {
@@ -15,7 +15,7 @@ public class StringArrayComparison {
 					break;
 				}
 			}
-			if (!found) {
+			if (!found) {//if found returns Duplicates--- !found means returns Unique
 				System.out.println(s1);
 			}
 		}

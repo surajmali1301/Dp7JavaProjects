@@ -30,7 +30,7 @@ public class Duplicate {
 	public static void main(String[] args) {
 
 
-		int arr[]= {3, 10, 90, 78, 56, 10, 78, 34, 61};
+		int arr[]= {3, 10, 90, 78, 56, 10,'0', 34, };
 
 		duplicate(arr);
 	

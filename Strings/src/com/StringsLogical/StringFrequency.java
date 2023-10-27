@@ -12,9 +12,10 @@ public class StringFrequency {
 			for (int j = i+1; j < starr.length; j++) {
 				if(starr[i].equalsIgnoreCase(starr[j])) {
 					count++;
-					starr[i]="Visited";
+					starr[j]="Visited";
 				}
 			}
+			if(count>2)
 			System.out.println(starr[i]+"---->"+count);
 		}
 	}

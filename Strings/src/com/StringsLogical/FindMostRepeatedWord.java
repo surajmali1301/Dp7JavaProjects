@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 public class FindMostRepeatedWord {
 
-	static void repeated(String st) {
+	static void repeated(String starr[]) {
 
 		int maxCount = 0;
 		String word = "";
-		String starr[] = st.split("\\s");
 		int count = 0;
+
 		System.out.println(Arrays.toString(starr));
 		for (int i = 0; i < starr.length; i++) {
 			if (starr[i].equals("Visited"))
@@ -34,15 +34,15 @@ public class FindMostRepeatedWord {
 
 		}
 		System.out.println("Most repeate word is: " + word);
-		
+
 	}
 
 	public static void main(String[] args) {
 
+		String s = " My country name India and I love my Country";
+		String starr[] = s.split("\\s");
 
-		String s =" My country name India and I love my Country";
-
-		repeated(s);
+		repeated(starr);
 	}
 
 }

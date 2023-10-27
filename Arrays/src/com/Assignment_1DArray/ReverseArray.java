@@ -2,7 +2,7 @@ package com.Assignment_1DArray;
 
 import java.util.Arrays;
 
-public class ReverseArray {
+public class ReverseArray {//replace 1st element with last element
 
 	static void reverse(int a[]) {
         int index = 0;

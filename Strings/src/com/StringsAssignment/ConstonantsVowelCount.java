@@ -11,12 +11,14 @@ public class ConstonantsVowelCount {
 			if (ch >= 'a' && ch <= 'z') {
 				if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
 					vowels++;
+					System.out.println("vowels:     " + ch);
 				} else {
 					consonants++;
+					System.out.println("consonants: "+ch);
 				}
 			}
 		}
-		System.out.println("No.of vowels: " + vowels);
+		System.out.println("No.of Vowels: " + vowels);
 		System.out.println("No.of consonants: " + consonants);
 	}
 

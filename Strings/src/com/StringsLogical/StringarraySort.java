@@ -44,13 +44,13 @@ public class StringarraySort {
 		
 		String str[]= {"Java","C","Angular","Python","C++"};
 		
-		// lexographically
+		// lexicographically
 		
 		System.out.println("Before Sort:"+Arrays.toString(str));
 		
 		sortLexo(str);
 		
-		System.out.println("After sort:"+Arrays.toString(str));
+		System.out.println("After sort Lexographically:\n"+Arrays.toString(str));
 		
 		sortLength(str);
 		
