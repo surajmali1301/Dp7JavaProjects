@@ -1,4 +1,4 @@
-package com.StringsAssignment;
+ package com.StringsAssignment;
 
 public class CountOfWord {
 
@@ -8,7 +8,7 @@ public class CountOfWord {
 		for (int i = 0; i < starr.length; i++) {
 			if (starr[i].equals("Visited"))
 				continue;
-			count = 1;
+			count = 1; 
 			for (int j = i + 1; j < starr.length; j++) {
 				if (starr[i].equalsIgnoreCase(starr[j])) {
 					count++;

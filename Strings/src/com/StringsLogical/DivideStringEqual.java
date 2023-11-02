@@ -9,18 +9,18 @@ public class DivideStringEqual {
 		int len=st.length();
 		
 		System.out.println(len);
-		int n=len/noOfc;
+		int n=len/noOfc;// 12/3=4
+		
 		if(len%noOfc!=0) {
 			System.out.println("We cannot divide in equal parts");
 		}
 		else {
-		String split[] = new String[n];
+		String split[] = new String[n];//4
 		
 		int index=0;
 		
-		for (int i = 0; i < len; i+=noOfc) {
-			split[index]=st.substring(i,i+noOfc);
-			index++;
+		for (int i = 0; i < len; i+=noOfc) {//length=12
+			split[index++]=st.substring(i,i+noOfc);
 		}
 		System.out.println(Arrays.toString(split));
 		}
