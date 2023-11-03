@@ -31,37 +31,35 @@ public class TreeMapDemo {
 		
 		System.out.println(al);
 		System.out.println("-----------");
-//		Collections.sort(al.)
-//		System.out.println("-------------");
-//		
-//		Set<Integer> keys = tmap.keySet();
-//		Iterator<Integer> itr = keys.iterator();
-//		
-//		while(itr.hasNext()) {
-//			System.out.println(itr.next());
-//		}
-//		
-//		System.out.println("-------------");
-//		
-//		for(Entry<Integer, String> e:tmap.entrySet()) {
-//			System.out.println(e.getKey()+"--"+e.getValue());
-//		}
-//		
-//		System.out.println("-------------");
-//		
-//		Set<Entry<Integer,String>> e = tmap.entrySet();
-//		
-//		for(Entry<Integer,String> r:e) {
-//			System.out.println(r.getKey()+"---"+r.getValue());
-//		}
-//		
-//		System.out.println("-------------");
-//		
-//		NavigableMap<Integer,String> ns = tmap.descendingMap();
-//		
-//		for(Map.Entry<Integer, String> e2:ns.entrySet()) {
-//			System.out.println();
-//		}
+		
+		Set<Integer> keys = tmap.keySet();
+		Iterator<Integer> itr = keys.iterator();
+		
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+		
+		System.out.println("-------------");
+		
+		for(Entry<Integer, String> e:tmap.entrySet()) {
+			System.out.println(e.getKey()+"--"+e.getValue());
+		}
+		
+		System.out.println("-------------");
+		
+		Set<Entry<Integer,String>> e = tmap.entrySet();
+		
+		for(Entry<Integer,String> r:e) {
+			System.out.println(r.getKey()+"---"+r.getValue());
+		}
+		
+		System.out.println("-------------");
+		
+		NavigableMap<Integer,String> ns = tmap.descendingMap();
+		
+		for(Map.Entry<Integer, String> e2:ns.entrySet()) {
+			System.out.println();
+		}
 	}
 
 }

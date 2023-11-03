@@ -10,12 +10,12 @@ public class ArrayListConversion {
 		
 		HashMap<String, Integer> h1 = new HashMap<>();
 		
-		for (String s : list) {
-			if(h1.containsKey(s)) {
-				h1.put(s, h1.get(s)+1);
+		for (String str : list) {
+			if(h1.containsKey(str)) {
+				h1.put(str, h1.get(str)+1);
 			}
 			else {
-				h1.put(s, 1);
+				h1.put(str, 1);
 			}
 		}
 		for (Map.Entry<String, Integer> e : h1.entrySet()) {

@@ -11,10 +11,10 @@ public class PriceComparator implements Comparator<Book> {
 		if (o1.getPrice() == o2.getPrice())
 			return 0;
 		if (o1.getPrice() > o2.getPrice())
-			return -1;
+			return 1;
 
 		else
-			return 1;
+			return -1;
 
 	}
 

@@ -1,4 +1,4 @@
-package com.Stac;
+package com.Stack;
 
 import java.util.Iterator;
 
@@ -27,7 +27,7 @@ class MyStack{
 			top--;
 		}
 		else {
-			System.out.println("Stac is empty");
+			System.out.println("Stack is empty");
 		}
 	}
 	
@@ -42,7 +42,7 @@ class MyStack{
 			System.out.println();
 		}
 		else {
-			System.out.println("Stac is empty");
+			System.out.println("Stack is empty");
 		}
 	}
 	

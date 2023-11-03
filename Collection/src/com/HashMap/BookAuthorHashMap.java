@@ -38,6 +38,8 @@ public class BookAuthorHashMap {
 		list.add(new Book(2, "Hamlet", 890, new Author(2,"William Shakespeare")));
 		list.add(new Book(1, "Fantastic Beasts", 1043, new Author(3,"JK Rowling")));
 		list.add(new Book(1, "Othello", 1043, new Author(4,"William Shakespeare")));
+		
+		createMap(list);
 	}
 
 }
