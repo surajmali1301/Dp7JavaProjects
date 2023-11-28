@@ -17,14 +17,15 @@ public class EmployeeList {
 		emp.add(new Employee(4,"Aniket",60000f));
 		
 		System.out.println(emp.size());
-		Employee max = emp.get(0);
-		for (Employee e:emp) {
-			if(e.getSal()>max.getSal()) {
-				max=e;
-			}
-		}
-		System.out.println("Highest Salary: "+max);
+//		Employee max = emp.get(0);
+//		for (Employee e:emp) {
+//			if(e.getSal()>max.getSal()) {
+//				max=e;
+//			}
+//		}
+//		System.out.println("Highest Salary: "+max);
 		
+		Collections.sort(emp,Collections.reverseOrder());
 		
 //		Iterator<Employee> itr= emp.iterator();
 //		while(itr.hasNext()) {
