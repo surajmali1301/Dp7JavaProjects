@@ -10,7 +10,7 @@ public class Pyramid_Alphabets {
 			}
 
 			char ch='A';
-			for (char j = 1; j<=i ; j++) {
+			for (int j = 1; j<=i ; j++) {
 				System.out.print(ch+" ");
 				ch++;
 			}
